@@ -1,0 +1,76 @@
+/* Reset and basic styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .city-data-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .city-data-title {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+  
+  .city-data-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid layout for categories */
+  .data-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Styling for each category section */
+  .category-section {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* List styles for data items */
+  .data-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .data-item {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .data-item strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .data-categories {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
