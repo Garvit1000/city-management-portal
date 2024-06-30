@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# City Services Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The City Services Portal is a responsive web application built with React that allows citizens to report issues, access city services, and view real-time data on city operations.
 
-## Available Scripts
+## Features
+
+- Report city-related issues or concerns
+- Access various city services
+- View real-time data on city operations and statistics
+- Dynamic and responsive design with modern CSS
+- Flip card animations on the homepage
+- Fixed footer across all pages
+
+## Getting Started
+
+To get a local copy of the project up and running, follow these steps.
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher) or yarn (v1.22 or higher)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/your-username/city-services-portal.git
+   cd city-services-portal
+
+    Install dependencies:
+
+    sh
+
+   npm install
+   # or
+   yarn install
+
+   Start the development server:
+
+   sh
+
+   npm start
+   # or
+   yarn start
+
+   Open http://localhost:3000 to view it in the browser.
+
+Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+    npm start: Runs the app in development mode.
+    npm run build: Builds the app for production.
+    npm test: Launches the test runner in interactive watch mode.
+    npm run eject: Ejects the Create React App configuration (not reversible).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Components
+HomePage.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Displays the homepage with flip cards for services.
+    Includes sections for ongoing events and more city data.
 
-### `npm test`
+ReportIssue.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Allows citizens to file issues or raise complaints.
+    Stores submitted data in local storage.
 
-### `npm run build`
+CityServices.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Lists various city services with dynamic content.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+EmergencyServices.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Provides information on emergency services including contact details.
 
-### `npm run eject`
+Parks.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Displays information about city parks and their features.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+PublicTransport.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Allows users to find buses and trains within a specific time range.
+    Displays available buses and trains with real-time status.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+WasteManagement.js
 
-## Learn More
+    Provides information about waste management services and schedules.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CityData.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Displays real-time data on city operations and statistics.
 
-### Code Splitting
+Footer.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Displays a fixed footer at the bottom of the page.
 
-### Analyzing the Bundle Size
+Routes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The following routes are available in the application:
 
-### Making a Progressive Web App
+    /: Home page
+    /report-issues: Report issues or complaints
+    /city-services: Access city services
+    /emergency-services: Emergency services information
+    /parks: City parks information
+    /public-transport: Public transport information
+    /waste-management: Waste management information
+    /city-data: Real-time city data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
